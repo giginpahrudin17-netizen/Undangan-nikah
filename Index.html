@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Undangan Pernikahan</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;700&family=Great+Vibes&family=Lora:wght@400;700&family=Marcellus&family=Montserrat:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+
+<body>
+
+<div class="hero">
+
+    <video autoplay muted loop id="bg-video">
+        <source src="video/Video.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content"> 
+        <img src="images/Atas Kiri.png" class="corner top-left" alt="">
+        <img src="images/Atas kanan.png" class="corner top-right" alt="">
+        <img src="images/bawah kiri.png" class="corner bottom-left" alt="">
+        <img src="images/Bawah kanan.png" class="corner bottom-right" alt="">
+        <h1 data-aos="fade-up">Undangan</h1>
+        <h1 data-aos="fade-up">Pernikahan</h1>
+        <h2 data-aos="fade-left">H & K </h2>
+        <h3 data-aos="fade-left">Abud Habudin & Keke Nurjanah</h3>
+        <p>Sabtu, 17 Oktober 2026</p>
+
+        <div class="kepada">
+        <p>Kepada Yth.</p>
+        <h3 id="nama-tamu">Tamu Undangan</h3>
+        </div>
+
+        <button onclick="BukaUndangan()">
+        Buka Undangan
+        </button>
+    </div>
+
+</div>
+
+<section id="isi-undangan" data-aos="fade-up">
+
+    <h2>Assalamu'alaikum Wr. Wb.</h2>
+
+    <p>
+        Dengan memohon rahmat dan ridho Allah SWT,
+        kami mengundang Bapak/Ibu/Saudara/i
+        untuk menghadiri acara pernikahan kami.
+    </p>
+
+</section>
+
+<section id="mempelai" data-aos="fade-up">
+
+    <h2>Mempelai</h2>
+
+    <div class="pengantin">
+
+        <div class="card">
+            <img src="images/Pria.jpg" alt="Mempelai Pria">
+
+            <h3>Abud Habudin</h3>
+
+            <p>Putra dari Bapak Ahmad & Ibu Siti</p>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/Wanita.jpg" alt="Mempelai Wanita">
+
+            <h3>Keke Nurjanah</h3>
+
+            <p>Putri dari Bapak Budi & Ibu Ani</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="acara" data-aos="fade-right">
+
+    <h2>Detail Acara</h2>
+
+    <div class="card-acara">
+
+        <h3>Akad Nikah</h3>
+
+        <p>📅 Sabtu, 17 Oktober 2026</p>
+
+        <p>🕘 09.00 WIB</p>
+
+        <p>📍 Gedung Serbaguna Sukamaju</p>
+
+        <a href="https://maps.app.goo.gl/ycJ81S3dXEKfmVhJ7" target="_blank" class="btn-maps">
+    📍 Lihat Lokasi
+    </a>
+
+    </div>
+
+    <div class="card-acara">
+
+        <h3>Resepsi</h3>
+
+        <p>📅 Sabtu, 17 Oktober 2026</p>
+
+        <p>🕐 13.00 WIB</p>
+
+        <p>📍 Gedung Serbaguna Sukamaju</p>
+
+        <a href="https://maps.app.goo.gl/ycJ81S3dXEKfmVhJ7" target="_blank" class="btn-maps">
+    📍 Lihat Lokasi
+    </a>
+
+    </div>
+
+</section>
+
+<section id="countdown" data-aos="zoom-in">
+
+    <h2>Menuju Hari Bahagia</h2>
+
+    <div class="timer">
+
+        <div class="box">
+            <h3 id="hari">0</h3>
+            <span>Hari</span>
+        </div>
+
+        <div class="box">
+            <h3 id="jam">0</h3>
+            <span>Jam</span>
+        </div>
+
+        <div class="box">
+            <h3 id="menit">0</h3>
+            <span>Menit</span>
+        </div>
+
+        <div class="box">
+            <h3 id="detik">0</h3>
+            <span>Detik</span>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="love-story" data-aos="fade-left">
+
+    <h2>Love Story</h2>
+
+    <div class="story">
+
+        <div class="story-item">
+            <h3>2020</h3>
+            <p>Pertama kali kami bertemu dan mulai saling mengenal.</p>
+        </div>
+
+        <div class="story-item">
+            <h3>2022</h3>
+            <p>Dengan restu keluarga, kami melangsungkan lamaran.</p>
+        </div>
+
+        <div class="story-item">
+            <h3>2026</h3>
+            <p>InsyaAllah kami akan melangsungkan pernikahan.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="galeri" data-aos="fade-up">
+
+    <h2>Galeri Foto</h2>
+
+    <div class="gallery">
+
+        <img src="images/Screenshot 2025-11-12 154725.png" alt="Foto 1">
+        <img src="images/Screenshot 2025-11-12 154748.png" alt="Foto 2">
+        <img src="images/Screenshot 2025-11-12 154808.png" alt="Foto 3">
+        <img src="images/Screenshot 2025-11-12 154826.png" alt="Foto 4">
+        <img src="images/Screenshot 2025-11-14 104839.png" alt="Foto 5">
+        <img src="images/Screenshot 2025-11-17 163015.png" alt="Foto 6">
+        <img src="images/Screenshot 2025-11-17 163015.png" alt="Foto 7">
+        <img src="images/Screenshot 2025-11-17 163015.png" alt="Foto 8">
+
+    </div>
+
+</section>
+
+<section id="gift" data-aos="fade-up">
+
+    <h2>Amplop Digital</h2>
+
+    <p>
+        Doa restu Anda merupakan hadiah terindah bagi kami.
+        Namun apabila ingin memberikan tanda kasih,
+        dapat melalui rekening berikut.
+    </p>
+
+    <div class="rekening-card">
+
+        <img src="images/download (1).png" alt="Logo BCA" class="bank-logo">
+
+        <h3>Bank BCA</h3>
+
+        <h4 id="norek">1234567890</h4>
+
+        <p>a.n. Abud Habudin</p>
+
+        <button onclick="copyRekening()">
+            📋 Salin Nomor Rekening
+        </button>
+
+    </div>
+
+    <div class="rekening-card">
+
+        <img src="images/download (1).png" alt="Logo BCA" class="bank-logo">
+
+        <h3>Bank BCA</h3>
+
+        <h4 id="norek">1234567890</h4>
+
+        <p>a.n. Abud Habudin</p>
+
+        <button onclick="copyRekening()">
+            📋 Salin Nomor Rekening
+        </button>
+
+    </div>
+
+</section>
+
+<section id="rsvp" data-aos="fade-up">
+
+    <h2>RSVP & Ucapan</h2>
+
+    <form id="rsvp-form">
+
+        <input
+            type="text"
+            id="nama"
+            placeholder="Nama Anda"
+            required
+        >
+
+        <select id="kehadiran" required>
+            <option value="">-- Pilih Kehadiran --</option>
+            <option>Hadir</option>
+            <option>Tidak Hadir</option>
+        </select>
+
+        <textarea
+            id="ucapan"
+            rows="5"
+            placeholder="Tulis doa atau ucapan..."
+        ></textarea>
+
+        <button type="submit">
+            Kirim
+        </button>
+
+    </form>
+
+    <p id="pesan"></p>
+
+</section>
+
+<section id="buku-tamu" data-aos="fade-up">
+
+    <h2>Buku Tamu</h2>
+
+    <div id="daftar-tamu">
+
+    </div>
+
+</section>
+
+<div id="lightbox" class="lightbox">
+
+    <span class="close">&times;</span>
+
+    <img class="lightbox-img" id="lightbox-img">
+
+</div>
+
+<audio id="bg-music" loop>
+    <source src="music/Instrumen.mp3" type="audio/mpeg">
+</audio>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

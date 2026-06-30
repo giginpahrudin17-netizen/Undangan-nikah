@@ -1,0 +1,632 @@
+body{
+    margin:0;
+    font-family:'Poppins', sans-serifScri;
+    background:#01eefb;
+}
+
+.hero{
+    position:relative;
+    overflow:hidden;
+
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+#bg-video{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:0;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+    z-index:1;
+}
+
+.hero-content{
+   
+    position:relative;
+
+    z-index:2;
+
+    padding:38px;
+
+    border:2px solid rgba(212,175,55,.7);
+
+    border-radius:10px;
+
+    background:rgba(0,0,0,.3);
+
+    backdrop-filter:blur(8px);
+
+    overflow:hidden;
+    box-shadow:
+        0 0 15px rgba(212,175,55,.4),
+        0 0 40px rgba(212,175,55,.2);
+    animation:glow 5s infinite;
+}
+
+.hero h1,
+.hero h2,
+.hero h3,
+.hero p,
+.hero button{
+    position:relative;
+    z-index:2;
+    color:rgb(250, 184, 1);
+}
+
+.hero h1{
+    line-height: 0,5cm;
+
+    font-family:'Cinzel', serif;
+
+    color:#FFD700;
+
+    font-size:35px;
+
+    letter-spacing:3px;
+
+    margin-bottom:1px;
+
+    text-shadow:2px 2px 15px rgba(0,0,0,0.5);
+
+}
+
+.hero h2{
+
+    font-family:'great vibes', cursive;
+
+    font-size:35px;
+
+    color:white;
+
+    margin:10px 0;
+
+}
+.hero h3{
+    font-family:'bodoni moda';
+    color:white;
+
+    font-size:24px;
+
+    font-weight:30;
+
+    letter-spacing:2px;
+
+}
+
+p{
+    color:rgb(7, 7, 7);
+
+    font-size:20px;
+
+    letter-spacing:3px;
+
+}
+
+button{
+
+    padding:18px 45px;
+
+    background:#f0e6c3;
+
+    color:rgb(245, 240, 240);
+
+    border:none;
+
+    border-radius:50px;
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+    transition:.4s;
+
+    box-shadow:0 15px 35px rgba(212,175,55,.4);
+
+}
+
+button:hover{
+
+    transform:translateY(-5px);
+
+    background:#FFD700;
+
+}
+
+#isi-undangan{
+    font-family:'rajdani';
+    padding:100px 20px;
+
+    text-align:center;
+
+    background-image:url("images/STPI.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+#isi-undangan h2{
+    font-family:'rajdani';
+    color:#c79a2d;
+    font-size:40px;
+}
+
+#isi-undangan p{
+    max-width:700px;
+    margin:auto;
+    font-size:20px;
+    line-height:35px;
+}
+
+#mempelai{
+    font-family: Pirata One;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.pengantin{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+.card{
+    width:300px;
+    padding:20px;
+    border-radius:15px;
+    backdrop-filter: blur;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+.card img{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+}
+#acara{
+    font-family: UnifrakturCook;
+    padding:80px 20px;
+    text-align:center;
+    background:#fc8701;
+}
+.card-acara{
+    line-height: 0,5cm;
+    letter-spacing: 1,5px;
+    max-width:500px;
+    margin:10px auto;
+    padding:25px;
+    background:#fcfcfb;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+.card-acara h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+.btn-maps{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#34A853;
+    color:rgb(249, 246, 246);
+    text-decoration:none;
+    border-radius:10px;
+    font-size:18px;
+    transition:0.3s;
+}
+.btn-maps:hover{
+    background:#2c8f46;
+}
+#countdown{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.timer{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.box{
+    width:120px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.box h3{
+    font-size:40px;
+    color:#d4af37;
+    margin:0;
+}
+#love-story{
+    padding:80px 20px;
+    text-align:center;
+    background:#fff;
+}
+
+.story{
+    max-width:800px;
+    margin:auto;
+}
+
+.story-item{
+    color: #111;
+    margin:40px 0;
+    padding:20px;
+    border-left:5px solid #d4af37;
+    background:#02fdf0;
+    text-align:left;
+}
+#galeri{
+
+    padding:80px 20px;
+
+    text-align:center;
+
+}
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+.gallery img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+.gallery img:hover{
+
+    transform:scale(1.05);
+
+}
+
+.corner{
+    position:absolute;
+    width:120px;
+    z-index:5;
+}
+
+.top-left{
+    top:-10px;
+    left:-10px;
+}
+
+.top-right{
+    top:-10px;
+    right:-10px;
+}
+
+.bottom-left{
+    bottom:-10px;
+    left:-10px;
+}
+
+.bottom-right{
+    bottom:-10px;
+    right:-10px;
+}
+
+@keyframes glow{
+
+    0%{
+        box-shadow:0 0 15px rgba(212,175,55,.2);
+    }
+
+    50%{
+        box-shadow:0 0 40px rgba(255,215,0,.8);
+    }
+
+    100%{
+        box-shadow:0 0 15px rgba(212,175,55,.2);
+    }
+
+}
+
+.lightbox{
+    display:none;
+    position:fixed;
+    z-index:9999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.92);
+
+    justify-content:center;
+    align-items:center;
+
+    animation:fadeIn .4s;
+}
+
+.lightbox-img{
+
+    max-width:90%;
+    max-height:85%;
+
+    border:6px solid #d4af37;
+    border-radius:15px;
+
+    box-shadow:0 0 35px rgba(212,175,55,.8);
+
+    animation:zoom .4s;
+}
+
+.close{
+
+    position:absolute;
+
+    top:20px;
+    right:40px;
+
+    color:white;
+
+    font-size:45px;
+
+    cursor:pointer;
+
+}
+
+@keyframes zoom{
+
+    from{
+        transform:scale(.6);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+.gallery img{
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 20px gold;
+
+}
+
+#rsvp{
+    padding:80px 20px;
+    text-align:center;
+}
+
+#rsvp form{
+    max-width:500px;
+    margin:auto;
+}
+
+#rsvp input,
+#rsvp select,
+#rsvp textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+#rsvp button{
+    background:#8b5e3c;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#rsvp button:hover{
+    background:#6e472d;
+}
+
+#pesan{
+    margin-top:20px;
+    color:green;
+    font-weight:bold;
+}
+
+#buku-tamu{
+    padding:60px 20px;
+    text-align:center;
+}
+
+#daftar-tamu{
+    max-width:700px;
+    margin:auto;
+}
+
+.tamu{
+    background:white;
+    margin:15px 0;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:left;
+}
+
+.tamu h3{
+    margin-bottom:10px;
+}
+
+.tamu p{
+    margin:5px 0;
+}
+
+#buku-tamu{
+    padding:80px 20px;
+    background:#111;
+    text-align:center;
+}
+
+#daftar-tamu{
+    max-width:800px;
+    margin:auto;
+}
+
+.tamu{
+    background:#fff;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:15px;
+    text-align:left;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.tamu h3{
+    margin:0;
+    color:#8B5E3C;
+}
+
+.tamu strong{
+    color:#666;
+}
+
+.tamu p{
+    margin-top:10px;
+}
+
+#gift{
+    padding:80px 20px;
+    text-align:center;
+    background:linear-gradient(180deg,#fffdf8,#f5ebd5);
+    color:white;
+}
+
+#gift p{
+    max-width:700px;
+    margin:15px auto;
+    line-height:1.8;
+}
+
+.rekening-card{
+    max-width:420px;
+    margin:40px auto;
+    background:white;
+    color:#333;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.bank-logo{
+    width:120px;
+    margin-bottom:20px;
+}
+
+.rekening-card h4{
+    font-size:28px;
+    margin:15px 0;
+    letter-spacing:2px;
+}
+
+.rekening-card button{
+    background:#b8860b;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+.rekening-card button:hover{
+    background:#9c7308;
+}
+
+.kepada{
+    margin:25px 0;
+}
+
+.kepada p{
+    margin-bottom:5px;
+    color:white;
+}
+
+.kepada h3{
+    color:#d4af37;
+    font-size:28px;
+}
+
+/* Nama Tamu */
+
+.kepada{
+    margin:25px 0;
+}
+
+.kepada p{
+    font-size:18px;
+    color:white;
+    margin-bottom:5px;
+}
+
+.kepada h3{
+    font-size:30px;
+    color:#d4af37;
+    font-family:'Cormorant Garamond', serif;
+}
